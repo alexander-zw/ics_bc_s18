@@ -31,11 +31,11 @@ $valid_lab_end = 1
 
 if ARGV.length != 1
 	puts 'You must provide a single argument for the number of the lab you want to run.'
-	Process.exit
+	exit
 elsif ARGV[0].to_i < $valid_lab_start || ARGV[0].to_i > $valid_lab_end
 	puts "That's not a valid lab number, please input a number between " +
 	     "#{$valid_lab_start} and #{$valid_lab_start}."
-	Process.exit
+	exit
 end
 
 puts ''
